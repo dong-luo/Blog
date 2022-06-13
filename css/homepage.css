@@ -41,17 +41,11 @@ img {
 }
 
 #container {
-    display: grid;
+    display: flex;
+    flex-direction: column;
     height: 100%;
     width: fit-content;
     border: 2px solid gold;
-    grid-template-columns: 100%;
-    grid-template-rows: 100px 100px 1fr 80px;
-    grid-template-areas:
-        "title"
-        "navbar"
-        "post"
-        "footer";
 }
 
 #container > * {
